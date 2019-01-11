@@ -22,15 +22,17 @@ pinMode(DIN,INPUT);
 int main(){
 	int wheel_count;
 	int vhcl_count;	
-	while(1){
+	while(1){ // jika inisiasi key = false
 		wheel_count = digitalRead(DIN);
 		if(wheel_count==0&&key==true){
 			key=false;
-		}if else(wheel_count>=2){
+		}
+		else if(wheel_count>=2){
 			if(key=false){
 				vhcl_count++;
 				key=true;
-			}else{
+			}
+			else{
 				key=true;
 			}
 		}
@@ -41,4 +43,3 @@ int main(){
 	}
 
 }
-
