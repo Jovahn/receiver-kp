@@ -26,7 +26,8 @@ int main(){
 		wheel_count = digitalRead(DIN);
 		if(wheel_count==0&&key==true){
 			key=false;
-		}if else(wheel_count>=2){
+		}
+		else if(wheel_count>=2){
 			if(key=false){
 				vhcl_count++;
 				key=true;
